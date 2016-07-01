@@ -9,14 +9,13 @@ An average message has an increase in token count of at least 5x - this generall
  - Download zip / Clone repo
  - Move to contents to spamassassin location
 	 - Usually /etc/mail/spamassassin or /etc/spamassassin
- - Update Concepts.cf with correct path to the concepts directory
  - Do the test as below
  - Make sure [Bayes](https://wiki.apache.org/spamassassin/BayesFaq) is enabled
  - Restart Spamassassin
 
 ###Testing Installation
 
-With a test email run spamassassin in debug mode, searching for the *Concepts* keyword
+With a test email run spamassassin in debug mode, searching for the *BayesBytes* keyword
 
     $ spamassassin -D -t testemail 2>&1 | grep BayesBytes
     ...
